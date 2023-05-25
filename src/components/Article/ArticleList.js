@@ -2,7 +2,6 @@ import React from "react";
 import Article from "./Article";
 
 function ArticleList({ posts }) {
-  console.log(posts);
   return (
     <main>
       {posts.map((post) => {
@@ -12,6 +11,7 @@ function ArticleList({ posts }) {
             title={post.title}
             date={post.date}
             preview={post.preview}
+            minutes={post.minutes}
           />
         );
       })}
